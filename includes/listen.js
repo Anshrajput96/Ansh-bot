@@ -20,7 +20,7 @@ module.exports = function ({ api, models }) {
               const _ID = file.replace('.json', '');
               return _ADMINIDs.includes(_ID) || global.data.allThreadID.includes(_ID);
             });
-            console.log('Priyansh Rajput');
+            console.log('ansh Rajput');
             await new Promise(async resolve => {
                 for (const checkttFile of checkttData) {
                     const checktt = JSON.parse(fs.readFileSync(checkttDataPath + checkttFile));
@@ -58,7 +58,7 @@ module.exports = function ({ api, models }) {
 
             await new Promise(async resolve => {
                 if (day_now == 1) {
-                    console.log('Priyansh Rajput');
+                    console.log('ansh Rajput');
                     for (const checkttFile of checkttData) {
                         const checktt = JSON.parse(fs.readFileSync(checkttDataPath + checkttFile));
                         let storage = [], count = 1;
@@ -78,7 +78,7 @@ module.exports = function ({ api, models }) {
                                 return a.name.localeCompare(b.name);
                             }
                         });
-                        let checkttBody = '==PRIYANSH RAJPUT ❤️==\n\n';
+                        let checkttBody = '==ANSH RAJPUT ❤️==\n\n';
                         checkttBody += storage.slice(0, 10).map(item => {
                             return `${count++}. ${item.name} with ${item.count} message`;
                         }).join('\n');
@@ -103,7 +103,7 @@ module.exports = function ({ api, models }) {
     (async function () {
 
         try {
-            logger(global.getText('listen', 'startLoadEnvironment'), '[ Priyansh Rajput ]');
+            logger(global.getText('listen', 'startLoadEnvironment'), '[ ansh Rajput ]');
             let threads = await Threads.getAll(),
                 users = await Users.getAll(['userID', 'name', 'data']),
                 currencies = await Currencies.getAll(['userID']);
@@ -156,7 +156,7 @@ module.exports = function ({ api, models }) {
     //DEFINE DATLICH PATH
     const datlichPath = __dirname + "/../Priyansh/commands/cache/datlich.json";
 
-    //FUNCTION WORKS AS IT'S NAME, CRE: PRIYANSHU
+    //FUNCTION WORKS AS IT'S NAME, CRE: ANSHU
     const monthToMSObj = {
         1: 31 * 24 * 60 * 60 * 1000,
         2: 28 * 24 * 60 * 60 * 1000,
